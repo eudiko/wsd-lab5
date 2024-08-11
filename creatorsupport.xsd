@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+           targetNamespace="www.abc.com/creator-support" 
+           xmlns:cre="www.abc.com/creator-support" 
+           elementFormDefault="qualified">
+
+    <xs:element name="creators" type="cre:creatorsType"/>
+    
+    <xs:complexType name="creatorsType">
+        <xs:sequence>
+            <xs:element name="creator" type="cre:creatorType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="creatorType">
+        <xs:sequence>
+            <xs:element name="creator-id" type="xs:integer"/>
+            <xs:element name="creator-name" type="xs:string"/>
+            <xs:element name="projects" type="cre:projectsType"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:string" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="projectsType">
+        <xs:sequence>
+            <xs:element name="project" type="cre:projectType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="projectType">
+        <xs:sequence>
+            <xs:element name="project-name" type="xs:string"/>
+            <xs:element name="funding-goal" type="xs:decimal"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:string" use="required"/>
+    </xs:complexType>
+
+</xs:schema>

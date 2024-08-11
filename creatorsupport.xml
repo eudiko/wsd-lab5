@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="creatorsupport.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<!-- <!DOCTYPE creators SYSTEM "creatorsupport.dtd"> -->
+<?xml-stylesheet type="text/xsl" href="creatorsupport.xsl"?>
+
+<creators xmlns="www.abc.com/creator-support">
+    <creator id="C1">
+        <creator-id>1</creator-id>
+        <creator-name>Jane Doe</creator-name>
+        <projects>
+            <project id="P1">
+                <project-name>Fantasy Art Collection</project-name>
+                <funding-goal>5000</funding-goal>
+            </project>
+        </projects>
+    </creator>
+    <creator id="C2">
+        <creator-id>2</creator-id>
+        <creator-name>John Smith</creator-name>
+        <projects>
+            <project id="P2">
+                <project-name>Ambient Music Album</project-name>
+                <funding-goal>3000</funding-goal>
+            </project>
+        </projects>
+    </creator>
+    <creator id="C3">
+        <creator-id>3</creator-id>
+        <creator-name>Emily Davis</creator-name>
+        <projects>
+            <project id="P3">
+                <project-name>Tech Tutorial Series</project-name>
+                <funding-goal>2000</funding-goal>
+            </project>
+        </projects>
+    </creator>
+    <creator id="C4">
+        <creator-id>4</creator-id>
+        <creator-name>Michael Brown</creator-name>
+        <projects>
+            <project id="P4">
+                <project-name>Sci-Fi Novel Series</project-name>
+                <funding-goal>7000</funding-goal>
+            </project>
+        </projects>
+    </creator>
+</creators>
