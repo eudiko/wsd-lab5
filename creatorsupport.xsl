@@ -8,12 +8,33 @@
     <xsl:template match="/">
         <html>
             <head>
+                <style>
+                    table, td, th {  
+                      border: 1px solid #ddd;
+                      text-align: left;
+                    }
+                    
+                    table {
+                      border-collapse: collapse;
+                      width: 100%;
+                    }
+                    
+                    th, td {
+                      padding: 15px;
+                    }
+                </style>
                 <title>Creators</title>
             </head>
             <body>
                 <h2>Creator Support</h2>
 
-                <table style="width:100%;">
+                <table>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>ProjectName</th>
+                        <th>Funding</th>
+                    </tr>
                     <xsl:for-each select="/cre:creators/cre:creator">
                     <tr>
                         <td><xsl:value-of select="cre:creator-id"/></td>
